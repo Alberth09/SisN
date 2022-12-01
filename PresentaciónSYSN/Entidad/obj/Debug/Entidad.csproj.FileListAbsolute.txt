@@ -4,3 +4,9 @@ C:\Users\Alberto\source\repos\PresentaciónSYSN\Entidad\obj\Debug\Entidad.csproj
 C:\Users\Alberto\source\repos\PresentaciónSYSN\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\Alberto\source\repos\PresentaciónSYSN\Entidad\obj\Debug\Entidad.dll
 C:\Users\Alberto\source\repos\PresentaciónSYSN\Entidad\obj\Debug\Entidad.pdb
+C:\Users\Alberto\Desktop\Pedro\PresentaciónSYSN\Entidad\bin\Debug\Entidad.dll
+C:\Users\Alberto\Desktop\Pedro\PresentaciónSYSN\Entidad\bin\Debug\Entidad.pdb
+C:\Users\Alberto\Desktop\Pedro\PresentaciónSYSN\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
+C:\Users\Alberto\Desktop\Pedro\PresentaciónSYSN\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Alberto\Desktop\Pedro\PresentaciónSYSN\Entidad\obj\Debug\Entidad.dll
+C:\Users\Alberto\Desktop\Pedro\PresentaciónSYSN\Entidad\obj\Debug\Entidad.pdb

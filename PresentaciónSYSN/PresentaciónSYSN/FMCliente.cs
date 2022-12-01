@@ -22,13 +22,13 @@ namespace PresentaciónSYSN
         {
             InitializeComponent();
             mc = new ManejadorClientes();
-            dato = new Cliente(0, "", "", "", "", "");
+            dato = new Cliente(0, "", "", "", "");
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             MessageBox.Show(mc.Guardar(new Cliente(int.Parse(txtID.Text), txtNombre.Text, txtApellidos.Text, txtTelefono.Text,
-                txtDireccion.Text, txtEstado.Text)));
+                txtDireccion.Text)));
             Actualizar();
         }
         void Actualizar()
@@ -65,20 +65,12 @@ namespace PresentaciónSYSN
 
         private void Pdf(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            Font font = new Font("Arial", 14);
-            int ancho = 150;
-            int y = 20;
-            e.Graphics.DrawString("----Nota de venta----", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("Nota#"+txtID.Text, font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+           
         }
 
         private void btnDescargar_Click(object sender, EventArgs e)
         {
-            printDocument1 = new PrintDocument();
-            PrinterSettings ps = new PrinterSettings();
-            printDocument1.PrinterSettings = ps;
-            printDocument1.PrintPage += Pdf;
-            printDocument1.Print();
+           
         }
 
         private void dtgC_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -11,46 +11,7 @@ namespace Manejador
 {
     public class ManejadorInventario
     {
-        Base b = new Base("localhost", "root", "", "sysn");
-
-        public Tuple<bool, string> ValidarInventario(Inventario dato)
-        {
-            bool error = true;
-            string cadenaErrores = "";
-
-            if (dato._Id == 0 ||dato._Id == 0)
-            {
-                cadenaErrores = cadenaErrores + "El campo id no puede ser vacio \n";
-                error = false;
-            }
-            else
-            {
-                if (dato._Producto.Length == 0 || dato._Producto == null)
-                {
-                    cadenaErrores = cadenaErrores + "El campo de producto no puede ser vacio \n";
-                    error = false;
-                }
-                else
-                {
-                    if (dato._tipo.Length == 0 || dato._tipo == null)
-                    {
-                        cadenaErrores = cadenaErrores + "El campo tipo no puede ser vacio \n";
-                        error = false;
-                    }
-                    else
-                    {
-                        if (dato._Cantidad.Length == 0 || dato._Cantidad == null)
-                        {
-                            cadenaErrores = cadenaErrores + "El campo cantidad no puede ser vacio \n";
-                            error = false;
-                        }
-                    }
-                }
-            }
-
-            var valida = new Tuple<bool, string>(error, cadenaErrores);
-            return valida;
-        }
+        Base b = new Base("localhost", "root", "", "Sy");
 
         public string Guardar(Inventario dato)
         {

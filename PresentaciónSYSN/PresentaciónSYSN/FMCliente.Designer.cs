@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDescargar = new System.Windows.Forms.Button();
             this.dtgC = new System.Windows.Forms.DataGridView();
             this.btnSalir = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -38,12 +37,10 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
             this.lblDirección = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
@@ -51,18 +48,6 @@
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgC)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnDescargar
-            // 
-            this.btnDescargar.BackColor = System.Drawing.Color.IndianRed;
-            this.btnDescargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescargar.Location = new System.Drawing.Point(522, 196);
-            this.btnDescargar.Name = "btnDescargar";
-            this.btnDescargar.Size = new System.Drawing.Size(89, 31);
-            this.btnDescargar.TabIndex = 37;
-            this.btnDescargar.Text = "Descargar";
-            this.btnDescargar.UseVisualStyleBackColor = false;
-            this.btnDescargar.Click += new System.EventHandler(this.btnDescargar_Click);
             // 
             // dtgC
             // 
@@ -158,21 +143,11 @@
             this.lblTelefono.TabIndex = 40;
             this.lblTelefono.Text = "Telefono";
             // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(358, 127);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(55, 18);
-            this.lblEstado.TabIndex = 41;
-            this.lblEstado.Text = "Estado";
-            // 
             // lblDirección
             // 
             this.lblDirección.AutoSize = true;
             this.lblDirección.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDirección.Location = new System.Drawing.Point(342, 152);
+            this.lblDirección.Location = new System.Drawing.Point(347, 128);
             this.lblDirección.Name = "lblDirección";
             this.lblDirección.Size = new System.Drawing.Size(71, 18);
             this.lblDirección.TabIndex = 42;
@@ -199,23 +174,16 @@
             this.txtTelefono.Size = new System.Drawing.Size(192, 20);
             this.txtTelefono.TabIndex = 45;
             // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(419, 125);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(192, 20);
-            this.txtEstado.TabIndex = 46;
-            // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(419, 152);
+            this.txtDireccion.Location = new System.Drawing.Point(419, 129);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(192, 20);
             this.txtDireccion.TabIndex = 47;
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(374, 203);
+            this.txtbuscar.Location = new System.Drawing.Point(469, 201);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(142, 20);
             this.txtbuscar.TabIndex = 48;
@@ -229,7 +197,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(313, 203);
+            this.label1.Location = new System.Drawing.Point(408, 200);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 18);
             this.label1.TabIndex = 49;
@@ -256,16 +224,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblDirección);
-            this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.btnDescargar);
             this.Controls.Add(this.dtgC);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtID);
@@ -281,8 +246,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnDescargar;
         private System.Windows.Forms.DataGridView dtgC;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtID;
@@ -292,12 +255,10 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Label lblDirección;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Drawing.Printing.PrintDocument printDocument1;

@@ -46,7 +46,6 @@
             this.lblMaximo = new System.Windows.Forms.Label();
             this.txtMaximo = new System.Windows.Forms.TextBox();
             this.txtMinimo = new System.Windows.Forms.TextBox();
-            this.btnDescargar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -218,20 +217,9 @@
             this.txtMinimo.Size = new System.Drawing.Size(129, 20);
             this.txtMinimo.TabIndex = 29;
             // 
-            // btnDescargar
-            // 
-            this.btnDescargar.BackColor = System.Drawing.Color.IndianRed;
-            this.btnDescargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescargar.Location = new System.Drawing.Point(501, 204);
-            this.btnDescargar.Name = "btnDescargar";
-            this.btnDescargar.Size = new System.Drawing.Size(89, 31);
-            this.btnDescargar.TabIndex = 30;
-            this.btnDescargar.Text = "Descargar";
-            this.btnDescargar.UseVisualStyleBackColor = false;
-            // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(357, 211);
+            this.txtBuscar.Location = new System.Drawing.Point(451, 215);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(138, 20);
             this.txtBuscar.TabIndex = 32;
@@ -252,7 +240,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(296, 213);
+            this.label2.Location = new System.Drawing.Point(390, 217);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 18);
             this.label2.TabIndex = 50;
@@ -267,7 +255,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBuscar);
-            this.Controls.Add(this.btnDescargar);
             this.Controls.Add(this.txtMinimo);
             this.Controls.Add(this.txtMaximo);
             this.Controls.Add(this.lblMaximo);
@@ -314,7 +301,6 @@
         private System.Windows.Forms.Label lblMaximo;
         private System.Windows.Forms.TextBox txtMaximo;
         private System.Windows.Forms.TextBox txtMinimo;
-        private System.Windows.Forms.Button btnDescargar;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

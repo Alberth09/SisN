@@ -11,7 +11,7 @@ namespace Manejador
 {
     public class ManejadorVentas
     {
-        Base b = new Base("127.0.0.1", "root", "", "SYSN");
+        Base b = new Base("127.0.0.1", "root", "", "Sy");
 
         public Tuple<bool, string> ValidarVenta(Ventas dato)
         {
@@ -56,7 +56,7 @@ namespace Manejador
             string r = "";
             try
             {
-                r = b.Comando(string.Format("insert into Ventas values({0},'{1}','{2}','{3}')", dato._Id, dato._FKNombre,
+                r = b.Comando(string.Format("insert into Venta values({0},'{1}','{2}','{3}')", dato._Id, dato._FKNombre,
                 dato._FKProducto, dato._Cantidad));
             }
             catch (Exception ex)
@@ -68,7 +68,7 @@ namespace Manejador
         }
         public void Mostrar(DataGridView dtgV, string dato)
         {
-            dtgV.DataSource = b.Mostrar(string.Format("select * from Ventas where ID like '%{0}%'", dato), "Ventas").Tables["Ventas"];
+            dtgV.DataSource = b.Mostrar(string.Format("select * from Venta where ID like '%{0}%'", dato), "Venta").Tables["Venta"];
             dtgV.AutoResizeColumns();
         }
         public string Borrar(Ventas dato)
@@ -78,7 +78,7 @@ namespace Manejador
                 MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
-                r = b.Comando(string.Format("delete from Ventas where id='{0}'", dato._Id));
+                r = b.Comando(string.Format("delete from Venta where id='{0}'", dato._Id));
             }
             else
             {
